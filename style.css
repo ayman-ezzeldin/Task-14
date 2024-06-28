@@ -1,0 +1,291 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #faf6eea1;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    height: 60px;
+    padding-top: 20px;
+    padding-left: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+    & ul li {
+        display: flex;
+    }
+}
+
+.nav ul li .home,
+.about,
+.menu,
+.where {
+    width: 350px;
+    text-align: center;
+    height: 30px;
+    padding-top: 5px;
+
+
+    &:hover {
+        background-color: rgb(227, 223, 223);
+
+        & a {
+            color: black;
+        }
+
+    }
+
+    & a {
+        text-decoration: none;
+        color: white;
+        text-transform: uppercase;
+        margin-top: 20px;
+    }
+}
+
+.body {
+    background: url(images/coffeehouse.jpg) center/cover no-repeat;
+    height: 650px;
+
+}
+
+.body .time1 {
+    transform: translate(25px, 400px);
+    color: white;
+    background-color: black;
+    width: 179px;
+    height: 32px;
+    padding: 5px;
+}
+
+.body .cafe {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 100;
+    padding-top: 120px;
+}
+
+.aboutt {
+    height: 1000px;
+}
+
+.aboutt .about_cafe {
+    background-color: black;
+    color: white;
+    text-align: center;
+    transform: translate(630px, 30px);
+    width: 235px;
+    margin-top: 20px;
+}
+
+.aboutt .parag1,
+.parag2,
+.parag3,
+img,
+.time {
+    padding-top: 25px;
+    max-width: 700px;
+    transform: translate(400px, 30px);
+    margin: 10px;
+    line-height: 1.5;
+}
+
+.aboutt .parag3 {
+    background-color: rgb(230, 231, 233);
+}
+
+.aboutt .parag3::before {
+    content: "";
+    position: absolute;
+    border: 3.5px solid;
+    left: -7px;
+    height: 139px;
+    color: #c9c8c8;
+    top: 0px;
+}
+
+.aboutt .time {
+    padding-top: 0px;
+
+    span {
+        font-weight: 600;
+    }
+}
+
+.menuu {
+    height: 800px;
+}
+
+.menuu .mEnu .menu_cafe {
+    background-color: black;
+    color: white;
+    text-align: center;
+    transform: translate(630px, -10px);
+    width: 235px;
+    margin-top: 15px;
+}
+
+.menuu .mEnu .header {
+    box-shadow: -1px 0rem 1rem rgb(169 169 169);
+    display: flex;
+    width: 800px;
+    padding-top: 29px;
+    max-width: 700px;
+    transform: translate(411px, 30px);
+
+    & .eat,
+    .drink {
+        width: 320px;
+        text-align: center;
+    }
+}
+
+.menuu .mEnu .header .eat {
+    background-color: gray;
+    height: 30px;
+    padding-top: 8px;
+    transform: translate(20px, -13px);
+}
+
+.menuu .mEnu .header .drink {
+    height: 30px;
+    padding-top: 8px;
+    transform: translate(40px, -13px);
+    background-color: rgb(228, 228, 229);
+}
+
+.menuu .mEnu .table {
+    box-shadow: -1px 0rem 1rem rgb(169 169 169);
+    width: 800px;
+    padding-top: 29px;
+    max-width: 700px;
+    transform: translate(411px, 30px);
+    height: 600px;
+}
+
+.menuu .mEnu .table .bread,
+.bread2,
+.bread3,
+.bread4,
+.bread5 {
+    font-size: larger;
+    font-weight: 100;
+    margin-left: 20px;
+    margin: 22px 20px;
+}
+
+.menuu .mEnu .table .p1,
+.p2,
+.p3,
+.p4,
+.p5 {
+    color: rgb(157 156 156);
+    height: 90px;
+    margin-left: 20px;
+    margin: 22px 20px;
+}
+
+.location {
+    height: 800px;
+}
+
+.location .find {
+    background-color: black;
+    color: white;
+    text-align: center;
+    transform: translate(630px, 422px);
+    width: 235px;
+    margin-top: 15px;
+}
+
+.location .loc {
+    transform: translate(410px, 507px);
+
+}
+
+.location img {
+
+    text-align: center;
+    transform: translate(400px, 480px);
+}
+
+.location .loc_p {
+    transform: translate(400px, 504px);
+    width: 458px;
+    line-height: 2;
+
+    & span {
+        background-color: black;
+        color: white;
+        padding: 5px;
+    }
+}
+
+.location .contact {
+    transform: translate(400px, 576px);
+}
+
+.location .contact form {
+    line-height: 5;
+
+    & .name,
+    .email,
+    .phone,
+    .message {
+        width: 600px;
+        height: 60px;
+        line-height: 5;
+        padding: 0px 15px;
+        font-size: 15px;
+    }
+}
+
+.location .contact .contact_p {
+    & span {
+        font-weight: 600;
+        font-size: 20px;
+
+    }
+
+}
+
+.location .contact .buttons {
+    display: inline-block;
+    background-color: black;
+    width: 135px;
+    height: 50px;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 20px;
+
+    & a {
+        color: white;
+        text-decoration: none;
+    }
+
+
+}
+
+.location .contact .buttons:hover {
+    background-color: #5a5958;
+
+}
+
+footer {
+    transform: translate(500px, 876px);
+    margin-bottom: 50px;
+    height: 100px;
+}
